@@ -4,8 +4,7 @@ templateClass: tmpl-post
 ---
 <article>
   <h1>{{ post.title }}</h1>
-
-  
+    <img src="{%  imageUrlFor imageObject, 900  %}" alt="{{ post.mainImage.alt }}">
   <p>Written by {% for author in post.authors %}{{author.name}}{% endfor %}  </p>
   {{ post.body | markdownify | safe }}
   <p><a href="{{ '/' | url }}">← Home</a></p>
