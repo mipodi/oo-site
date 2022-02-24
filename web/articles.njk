@@ -1,0 +1,13 @@
+---
+layout: layouts/articles.njk
+tags:
+  - nav
+navtitle: Articles
+---
+
+<h1>Articles</h1>
+
+{% set postslist = collections.myPosts %}
+{% include "postslist.njk" %}
+
+<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
