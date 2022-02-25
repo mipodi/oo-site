@@ -14,6 +14,7 @@ html {
 
 body {
   width: 87.5%;
+  margin-top: 5vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
@@ -37,6 +38,7 @@ img {
 
 h1 {
   font-weight: 400;
+  font-weight: 100;
   margin-top: 4rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
@@ -78,6 +80,7 @@ p,
 ol,
 ul {
   font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 
@@ -156,4 +159,50 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5vw;
+}
+
+.logo-image {
+  /* margin-left: 39px; */
+  height: 36px;
+}
+
+.home {
+  text-decoration: none;
+}
+
+.nav {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.nav-wrapper {
+  max-inline-size: fit-content;
+}
+
+.nav-wrapper:hover {
+  color: #fff;
+  background-color: #004c77;
+  border-radius: 2px;
 }
