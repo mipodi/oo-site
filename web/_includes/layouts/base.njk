@@ -15,7 +15,11 @@
   </head>
   <body>
     <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+        <div class="logo-image">
+            <a href="/" ><img src="https://cdn.sanity.io/images/9zkvur1x/production/e82b828842a28e60d182c2c0dfaa94522bf7f68e-113x118.png?h=38"
+             alt="Order order studio logo jellyfish"></a>
+        </div>
+      <!-- <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1> -->
       <ul class="nav">
         {%- for nav in collections.nav | reverse -%}
         <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
@@ -28,7 +32,9 @@
     </main>
 
     <footer>
-        <p><em>This is an <a href="https://www.11ty.io/">Eleventy</a> + <a href="https://www.sanity.io">Sanity.io</a> project inspired by the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+        <p>Complex data, research or products? </p>
+        <p>Order Order Studio helps you sort things out.</p>
+        <p>hej@orderorder.io</p>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
