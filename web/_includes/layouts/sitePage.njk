@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-page
+---
+
+<article>
+  <h1>{{ sitePage.title }}</h1>
+  <img src="{%  imageUrlFor sitePage.mainImage, 900  %}" alt="{{ sitePage.mainImage.alt }}">
+
+  {{ sitePage.body | markdownify | safe }}
+  <p><a href="{{ '/' | url }}">← Home</a></p>
+</article>
