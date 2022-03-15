@@ -1,12 +1,1 @@
 <h1>Hi</h1>
-
-
-<ul>
-{% for post in frontpage %}
-{% set currentPost = post.data.post %}
-
-  <li>{{ post.data.title }}</li>
-  <h2><a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
-
-{% endfor %}
-</ul>
