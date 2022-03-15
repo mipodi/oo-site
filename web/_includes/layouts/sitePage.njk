@@ -5,7 +5,10 @@ templateClass: tmpl-page
 
 <article>
   <h1>{{ sitePage.title }}</h1>
-  <img src="{%  imageUrlFor sitePage.mainImage, 900  %}" alt="{{ sitePage.mainImage.alt }}">
+
+  {% if sitePage.mainImage %}
+    <img src="{%  imageUrlFor sitePage.mainImage, 900  %}" alt="{{ sitePage.mainImage.alt }}">
+  {% endif %}
 
   {{ sitePage.body | markdownify | safe }}
   <p><a href="{{ '/' | url }}">← Home</a></p>
