@@ -1,7 +1,19 @@
 ---
 layout: layouts/home.njk
+pagination:
+  alias: frontPage
+  data: frontPage
+  size: 1
 ---
 
-<h1>Work</h1>
-{% set frontpagelist = collections.myPages %}
-{% include "frontpage.njk" %}
+
+<article>
+  <h1>{{ frontPage.title }}</h1>
+
+  {% if frontPage.mainImage %}
+    <img src="{%  imageUrlFor frontPage.mainImage, 900  %}" alt="{{ frontPage.mainImage.alt }}">
+  {% endif %}
+
+  {{ frontPage.body | markdownify | safe }}
+
+</article>
