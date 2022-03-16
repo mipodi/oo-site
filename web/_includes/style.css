@@ -206,3 +206,8 @@ header {
   background-color: #004c77;
   border-radius: 2px;
 }
+
+.tmpl-home {
+  display: flex;
+  justify-content: center;
+}
