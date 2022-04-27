@@ -50,7 +50,6 @@ h1.home {
 }
 
 h2 {
-  font-style: italic;
   font-weight: 400;
   margin-top: 2.1rem;
   margin-bottom: 1.4rem;
@@ -59,7 +58,6 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
   font-weight: 400;
   font-size: 1.7rem;
   margin-top: 2rem;
