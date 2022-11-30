@@ -10,9 +10,12 @@ pagination:
 <article>
   <h1>{{ frontPage.title }}</h1>
 
-  {% if frontPage.mainImage %}
-    <img src="{%  imageUrlFor frontPage.mainImage, 900  %}" alt="{{ frontPage.mainImage.alt }}">
-  {% endif %}
+  {# {% if frontPage.mainImage %}
+    <figure>
+      <img src="{%  imageUrlFor frontPage.mainImage, 900  %}" alt="{{ frontPage.mainImage.alt }}">
+      <figcaption>{{ frontPage.mainImage.caption }}</figcaption>
+    </figure>
+  {% endif %} #}
 
   {{ frontPage.body | markdownify | safe }}
 
