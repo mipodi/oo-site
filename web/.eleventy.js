@@ -4,6 +4,8 @@ const CleanCSS = require("clean-css");
 const urlFor = require("./utils/imageUrl");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+
   // https://www.11ty.io/docs/quicktips/inline-css/
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
