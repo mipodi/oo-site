@@ -167,6 +167,18 @@ header {
   /* padding-right: 5vw; */
 }
 
+footer {
+  /* background-color: #fcc7a7; */
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+footer p {
+  /* max-width: 50px; */
+  margin: 0;
+  line-height: 1.4;
+}
+
 .logo-image {
   /* margin-left: 39px; */
   height: 36px;
