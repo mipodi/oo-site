@@ -221,3 +221,7 @@ footer p {
   display: flex;
   justify-content: center;
 }
+
+.cropped-image {
+  clip-path: circle(33%);
+}
