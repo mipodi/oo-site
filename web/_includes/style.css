@@ -223,16 +223,22 @@ footer p {
 }
 
 .viewer-container {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+}
+
+.viewer-background {
   background-color: #fffad7;
   border-radius: 50%;
-  /* display: inline-block; */
-  box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
-
+  box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%); 
 }
 
 .cropped-image {
   clip-path: circle(33%);
 }
+
 
 .slider-container {
   display: flex;
