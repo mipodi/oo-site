@@ -331,3 +331,17 @@ input[type="range"]::-moz-range-thumb:active {
 #rangevalue {
   display: none;
 }
+
+.content-container {
+  display: flex;
+  gap: 14px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 780px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
