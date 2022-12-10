@@ -222,8 +222,9 @@ footer p {
 }
 
 .tmpl-home {
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  flex-direction: column; */
 }
 
 .viewer-container {
