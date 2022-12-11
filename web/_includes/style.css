@@ -226,6 +226,18 @@ footer p {
   border-radius: 2px;
 }
 
+nav [aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nav-item-active {
+  text-decoration: underline;
+  /* text-underline-offset: 3px; */
+  /* color: red; */
+}
+
+
 .tmpl-home {
   /* display: flex;
   justify-content: center;
