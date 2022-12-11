@@ -9,7 +9,9 @@ templateClass: tmpl-post
     <img src="{%  imageUrlFor post.mainImage, 900  %}" alt="{{ post.mainImage.alt }}">
   {% endif %}
 
-  <p>Written by {% for author in post.authors %}{{author.name}}{% endfor %}  </p>
   {{ post.body | markdownify | safe }}
+
+  <p>Written by {% for author in post.authors %}{{author.name}}{% endfor %}  </p>
+
   <p><a href="{{ '/' | url }}">← Home</a></p>
 </article>

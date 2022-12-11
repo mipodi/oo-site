@@ -4,7 +4,7 @@
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 
     {% if currentPost.mainImage %}
-      <img src="{% croppedUrlFor currentPost.mainImage, 600, 600 %}" alt="{{ currentPost.mainImage.alt }}">
+      <img src="{% croppedUrlFor currentPost.mainImage, 900 %}" alt="{{ currentPost.mainImage.alt }}">
     {% endif %}
 
     <div class="post-content">
