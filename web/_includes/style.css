@@ -159,6 +159,11 @@ a:hover {
   text-decoration: none;
 }
 
+.postlist {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
 header {
   display: flex;
   flex-wrap: nowrap;
@@ -222,8 +227,9 @@ footer p {
 }
 
 .tmpl-home {
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  flex-direction: column; */
 }
 
 .viewer-container {
