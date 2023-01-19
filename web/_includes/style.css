@@ -255,6 +255,16 @@ nav [aria-current="page"] {
 
 .gallery > img {
   grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  animation: m 8s infinite linear;
+  transform-origin: 50% 120.7%;
+}
+
+@keyframes m {
+  100% { transform: rotate(-360deg); }
 }
 
 .viewer-container {
