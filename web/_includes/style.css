@@ -248,12 +248,13 @@ nav [aria-current="page"] {
   /* min-height: 100vh; */
   display: grid;
   place-content: center;
-  background: #C2CBCE;
+  /* background: #C2CBCE; */
 }
 
 
 .gallery {
   --s: 280px; /* control the size */
+  --s: 600px; /* control the size */
 
   display: grid;
   width: var(--s);
@@ -271,7 +272,8 @@ nav [aria-current="page"] {
   inset: 0;
   padding: inherit;
   border-radius: inherit;
-  background: repeating-conic-gradient(#789048 0 30deg,#DFBA69 0 60deg);
+  /* background: repeating-conic-gradient(#fafafa 0 30deg,#fffad7 0 60deg); */
+  background-color: #fafafa;
   -webkit-mask: 
      linear-gradient(#fff 0 0) content-box, 
      linear-gradient(#fff 0 0);
