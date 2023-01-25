@@ -9,24 +9,8 @@ pagination:
 
 <article>
 
-  {# {% if frontPage.mainImage %}
-    <figure>
-      <img src="{%  imageUrlFor frontPage.mainImage, 900  %}" alt="{{ frontPage.mainImage.alt }}">
-      <figcaption>{{ frontPage.mainImage.caption }}</figcaption>
-    </figure>
-  {% endif %} #}
-{# 
 <div class="gallery-container">
-<div class="gallery">
-  <img src="https://picsum.photos/id/104/400/400" alt="a dream catcher">
-  <img src="https://picsum.photos/id/1082/400/400" alt="a piano">
-  <img src="https://picsum.photos/id/158/400/400" alt="a live concert">
-  <img src="https://picsum.photos/id/234/400/400" alt="Paris">
-</div>
-</div> #}
-
-<div class="gallery-container">
-<div class="gallery">
+<div id="galleryElement" class="gallery">
        <img src="images/6.png" alt="The end plus hedghog seen buttside">
        <img src="images/5.png" alt="And everything jellyfish">
        <img src="images/4.png" alt="Visualize">
@@ -36,18 +20,8 @@ pagination:
 
 </div>
 </div>
+<button onclick="activateAnimation()"> DO PRESS ME</button>
  
-
-  {# <div class="viewer-container">
-    <div class="viewer-background">
-       <img src="images/1.png" id="imgchange" class="cropped-image" alt="Order Order Studio interest viewer apparatus">
-       </div>
-  </div>
-
-  <div class="slider-container">
-    <input type="range" class="slider" min="1" max="6" value="1" aria-label="Apparatus slider control" id="myRange">
-    <p><span id="rangevalue"></span></p>
-  </div> #}
 
   <h1>Work</h1>
 
@@ -94,25 +68,14 @@ pagination:
 </article>
 
  <script> 
-        let rangevalue = document.getElementById("myRange");
-        let setvalue = document.getElementById("rangevalue");
-        let imgchangevalue = document.getElementById("imgchange")
 
-        rangevalue.oninput = function() {
-            let getvalue = rangevalue.value;
-            setvalue.innerHTML = this.value;
-            if (getvalue == 2) {
-                imgchangevalue.setAttribute("src", "images/2.png")
-            } else if (getvalue == 3) {
-                imgchangevalue.setAttribute("src", "images/3.png")
-            } else if (getvalue == 4) {
-                imgchangevalue.setAttribute("src", "images/4.png")
-            } else if (getvalue == 5) {
-                imgchangevalue.setAttribute("src", "images/5.png")
-            } else if (getvalue == 6) {
-                imgchangevalue.setAttribute("src", "images/6.png")
-            } else if (getvalue == 1) {
-                imgchangevalue.setAttribute("src", "images/1.png")
-            }
-        }
+function activateAnimation() {
+  let element = document.getElementById("galleryElement");
+  element.classList.toggle("running");
+
+  console.log("hej");
+
+}
+
+
   </script>

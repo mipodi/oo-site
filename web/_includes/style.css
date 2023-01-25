@@ -278,8 +278,8 @@ nav [aria-current="page"] {
   mask-composite: exclude;
 }
 
-.gallery::after,
-.gallery > img {
+.running::after,
+.running > img {
   /* animation: m 8s infinite cubic-bezier(.5, -0.2, .5, 1.2); */
   animation: m 12s infinite cubic-bezier(0.5, -0.2, 0.5, 1.2);
 }
@@ -292,6 +292,10 @@ nav [aria-current="page"] {
   border-radius: inherit;
   /* transform-origin: 50% 120.7%; */
   transform-origin: 50% 151.7%;
+}
+
+.running {
+
 }
 
 .gallery > img:nth-child(2) {
