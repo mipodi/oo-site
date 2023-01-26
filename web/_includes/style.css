@@ -341,6 +341,28 @@ nav [aria-current="page"] {
   }
 }
 
+button {
+  background-color: #8cedc6;
+  border: none;
+  color: #3e3f3e;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inherit;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: -185px;
+  left: 512px;
+  font-weight: 700;
+  font-size: 14px;
+  place-content: center;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,.2);
+}
+
 .viewer-container {
   display: flex;
   justify-content: center;
