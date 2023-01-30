@@ -295,7 +295,6 @@ nav [aria-current="page"] {
 }
 
 .running {
-
 }
 
 .gallery > img:nth-child(2) {
@@ -360,7 +359,7 @@ button {
   font-weight: 700;
   font-size: 14px;
   place-content: center;
-  box-shadow: 0 4px 6px hsla(0,0%,0%,.2);
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
 }
 
 .viewer-container {
@@ -483,5 +482,33 @@ input[type="range"]::-moz-range-thumb:active {
   .content-container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .gallery {
+    --s: 280px; /* control the size */
+  }
+
+  button {
+    top: -104px;
+    left: 230px;
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .gallery {
+    --s: 800px; /* control the size */
+  }
+
+  button {
+    top: -236px;
+    left: 706px;
+    width: 80px;
+    height: 80px;
   }
 }
