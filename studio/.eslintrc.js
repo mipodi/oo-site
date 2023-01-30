@@ -5,12 +5,12 @@ module.exports = {
   parser: 'babel-eslint',
   rules: {
     'react/prop-types': 0,
-    'object-curly-spacing': ['error', 'never']
+    'object-curly-spacing': ['error', 'never'],
   },
   settings: {
     react: {
       pragma: 'React',
-      version: '16.2.0'
-    }
-  }
+      version: '16.2.0',
+    },
+  },
 }

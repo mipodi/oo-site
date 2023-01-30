@@ -72,3 +72,15 @@ yarn.lock
 
 # Static site
 _site
+
+# Mac files
+.DS_Store
+
+# Dependency directories
+/node_modules
+
+# Studio
+studio/
+
+# Other unnecessary stuff
+lerna.json
