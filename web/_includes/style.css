@@ -239,6 +239,7 @@ footer p {
   --s: 600px; /* control the size */
   display: grid;
   width: var(--s);
+  height: var(--s);
   aspect-ratio: 1;
   overflow: hidden;
   padding: calc(var(--s) / 20);
