@@ -216,7 +216,6 @@ nav [aria-current="page"] {
   text-decoration: underline;
 }
 
-
 footer {
   width: 100%;
   margin-bottom: 5em;
@@ -355,7 +354,7 @@ button {
 
 @media screen and (max-width: 620px) {
   .gallery {
-    --s: 280px; 
+    --s: 280px;
   }
 
   button {
@@ -369,7 +368,7 @@ button {
 
 @media screen and (min-width: 1500px) {
   .gallery {
-    --s: 800px; 
+    --s: 800px;
   }
 
   button {
